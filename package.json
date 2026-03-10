@@ -1,0 +1,12 @@
+{
+  "name": "dnx-tec",
+  "version": "1.0.0",
+  "description": "DNX Tecnología Web",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve -l $PORT"
+  },
+  "dependencies": {
+    "serve": "^14.2.0"
+  }
+}
