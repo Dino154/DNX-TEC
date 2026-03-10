@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DNX Tecnología | Sobre Nosotros</title>
     <link rel="icon" href="assets/img/dnx-logo.png" type="image/png">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-<div class="global-universe">
+    <div class="global-universe">
         <div class="nebula"></div>
-        
         <div class="stars-bg"></div>
         <div class="stars-mid"></div>
         <div class="stars-front"></div>
-        
         <div class="cyber-grid"></div> 
     </div>
 
@@ -28,7 +28,7 @@
             <div class="menu-toggle">☰</div>
             <ul class="nav-links">
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="sobre-nosotros.html" style="color: var(--color-neon-cyan); text-shadow: 0 0 8px var(--color-neon-cyan);">Sobre Nosotros</a></li>
                 <li><a href="faq.html">FAQ</a></li>
                 <li><a href="contacto.html" class="btn-small-neon">Contacto</a></li>
             </ul>
@@ -36,21 +36,93 @@
     </nav>
 
     <main>
-        <section class="about-section">
+        <section class="about-hero" style="min-height: 40vh; padding-top: 150px; padding-bottom: 20px;">
             <div class="section-header">
-                <h1 class="glitch-text" style="font-size: 3rem; margin-top: 50px;">Sobre Nosotros</h1>
+                <h1 class="glitch-text" style="font-size: 3.5rem;">NUESTRO <span class="text-highlight-blue">ADN</span></h1>
                 <div class="neon-divider cyan"></div>
             </div>
-            <div class="about-content catalog-card" style="max-width: 800px; font-size: 1.2rem;">
-                <p>En <span style="color: var(--color-neon-purple); font-weight: bold;">DNX Tecnología</span>, somos un ecosistema Full Stack enfocado en la fusión de código eficiente y diseño funcional. No solo programamos soluciones; construimos arquitecturas digitales escalables y de alta fidelidad para transformar la operatividad de tu empresa.</p>
-                <br>
-                <p>Nuestra filosofía se basa en el rendimiento, la escalabilidad y una experiencia de usuario impecable.</p>
-            </div>
+        </section>
 
-            <footer class="main-footer">
+        <section class="about-story" style="padding-top: 0;">
+            <div class="catalog-card" style="max-width: 900px; text-align: left; padding: 50px;">
+                <h2 style="color: var(--color-neon-purple); margin-bottom: 20px; font-size: 2rem;">Ingeniería detrás del Código</h2>
+                <p style="font-size: 1.15rem; color: #e0e0e0; margin-bottom: 20px; line-height: 1.8;">
+                    En <strong>DNX Tecnología</strong> no usamos plantillas prefabricadas ni tomamos atajos. Somos una agencia de desarrollo y arquitectura digital enfocada en la fusión de código eficiente, seguridad empresarial y diseño funcional de alta fidelidad.
+                </p>
+                <p style="font-size: 1.15rem; color: #e0e0e0; margin-bottom: 20px; line-height: 1.8;">
+                    Nuestro equipo construye infraestructuras tecnológicas robustas a la medida de tu empresa. Dominamos el desarrollo backend con <strong>Python y Django</strong>, creamos interfaces web fluidas y construimos aplicaciones nativas <strong></strong> para asegurar que tu operación nunca se detenga.
+                </p>
+                <p style="font-size: 1.15rem; color: var(--color-neon-cyan); font-weight: bold; line-height: 1.8;">
+                    Desde sistemas integrales de gestión y Help Desks empresariales, hasta e-commerce escalables y análisis de datos: transformamos la complejidad de tu negocio en ecosistemas de alto rendimiento.
+                </p>
+            </div>
+        </section>
+
+        <section class="about-pillars">
+            <div class="section-header">
+                <h2>Nuestros <span style="color: var(--color-neon-purple);">Pilares</span></h2>
+                <div class="neon-divider purple"></div>
+            </div>
+            <div class="features-grid" style="max-width: 1000px;">
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper" style="border-color: var(--color-neon-cyan); background: rgba(0, 229, 255, 0.1);">
+                        <i class="fas fa-bullseye" style="color: var(--color-neon-cyan);"></i>
+                    </div>
+                    <h3>Misión</h3>
+                    <p>Digitalizar y optimizar la operatividad de las empresas mediante software a medida, rápido, seguro y 100% escalable.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper" style="border-color: var(--color-neon-purple); background: rgba(157, 0, 255, 0.1);">
+                        <i class="fas fa-eye" style="color: var(--color-neon-purple);"></i>
+                    </div>
+                    <h3>Visión</h3>
+                    <p>Ser la agencia de arquitectura digital referente en el mercado, reconocidos por entregar código limpio y soluciones definitivas.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper" style="border-color: var(--color-neon-red); background: rgba(255, 17, 0, 0.1);">
+                        <i class="fas fa-shield-alt" style="color: var(--color-neon-red);"></i>
+                    </div>
+                    <h3>Compromiso</h3>
+                    <p>Garantizar la seguridad de los datos de nuestros clientes y brindar un soporte técnico inquebrantable 24/7.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-methodology">
+            <div class="section-header">
+                <h2>Nuestra <span style="color: #F2C811;">Metodología</span></h2>
+                <div class="neon-divider" style="background: #F2C811; box-shadow: 0 0 10px #F2C811;"></div>
+            </div>
+            
+            <div class="timeline-container">
+                <div class="timeline-step">
+                    <div class="step-number">01</div>
+                    <h4>Análisis y Descubrimiento</h4>
+                    <p>Auditamos tus procesos actuales y definimos la arquitectura del sistema y la base de datos ideal.</p>
+                </div>
+                <div class="timeline-step">
+                    <div class="step-number">02</div>
+                    <h4>Desarrollo Full Stack</h4>
+                    <p>Escribimos código limpio y optimizado, integrando el backend robusto con una interfaz moderna.</p>
+                </div>
+                <div class="timeline-step">
+                    <div class="step-number">03</div>
+                    <h4>Pruebas de Estrés</h4>
+                    <p>Sometemos el software a rigurosas pruebas de seguridad, rendimiento y adaptabilidad móvil.</p>
+                </div>
+                <div class="timeline-step">
+                    <div class="step-number">04</div>
+                    <h4>Despliegue y Soporte</h4>
+                    <p>Lanzamos tu proyecto en servidores de alta velocidad (VPS/AWS) y capacitamos a tu equipo.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
         <div class="footer-container">
             <div class="footer-column brand">
-                <img src="assets/img/dnx-logo.png" alt="DNX Logo" class="footer-logo">
+                <img src="assets/img/dnx-logo.png" alt="DNX Logo" class="footer-logo logo-footer-large">
                 <h3>Diego Parodi Tardío</h3>
                 <p>CEO & Lead Developer en DNX Tecnología.</p>
             </div>
@@ -74,9 +146,10 @@
                     <i class="fab fa-whatsapp"></i> +51 944 909 910
                 </a>
                 <div class="social-icons">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/51944909910" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="mailto:estefanovp123@gmail.com" title="Correo"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>
         </div>
@@ -85,8 +158,6 @@
             <p>&copy; 2026 DNX Tecnología | Arquitectura Digital Avanzada</p>
         </div>
     </footer>
-        </section>
-    </main>
 
     <script src="js/main.js"></script>
 </body>

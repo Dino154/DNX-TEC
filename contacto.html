@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DNX Tecnología | Contacto</title>
     <link rel="icon" href="assets/img/dnx-logo.png" type="image/png">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-  <div class="global-universe">
+    <div class="global-universe">
         <div class="nebula"></div>
-        
         <div class="stars-bg"></div>
         <div class="stars-mid"></div>
         <div class="stars-front"></div>
-        
         <div class="cyber-grid"></div> 
     </div>
 
@@ -30,43 +30,103 @@
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
                 <li><a href="faq.html">FAQ</a></li>
-                <li><a href="contacto.html" class="btn-small-neon">Contacto</a></li>
+                <li><a href="contacto.html" class="btn-small-neon" style="background: var(--color-neon-cyan); color: #000 !important; box-shadow: 0 0 15px var(--color-neon-cyan);">Contacto</a></li>
             </ul>
         </div>
     </nav>
 
     <main>
-        <section class="contact-section">
+        <section class="contact-hero" style="min-height: 25vh; padding-top: 150px; padding-bottom: 20px;">
             <div class="section-header">
-                <h1 class="glitch-text" style="font-size: 3rem; margin-top: 50px;">Inicia tu Proyecto</h1>
-                <div class="neon-divider"></div>
+                <h1 class="glitch-text" style="font-size: 3.5rem;">Inicia tu <span class="text-highlight-blue">Proyecto</span></h1>
+                <div class="neon-divider cyan"></div>
+                <p style="color: var(--color-text-muted); font-size: 1.1rem; margin-top: 20px;">Estamos listos para construir la infraestructura digital de tu empresa.</p>
             </div>
-            <form class="contact-form catalog-card" action="#" method="POST">
-                <div class="form-group">
-                    <input type="text" placeholder="Tu Nombre Completo" required class="neon-input">
-                </div>
-                <div class="form-group">
-                    <input type="email" placeholder="Correo Electrónico" required class="neon-input">
-                </div>
-                <div class="form-group">
-                    <select class="neon-input" required style="background-color: rgba(0,0,0,0.8);">
-                        <option value="" disabled selected>¿Qué servicio necesitas?</option>
-                        <option value="tienda">Tienda Virtual</option>
-                        <option value="sistema">Sistema de Gestión (Help Desk / Almacén)</option>
-                        <option value="web">Aplicación Web a Medida</option>
-                        <option value="otro">Otro</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <textarea placeholder="Cuéntanos los detalles de tu negocio..." rows="5" required class="neon-input"></textarea>
-                </div>
-                <button type="submit" class="btn-neon-vibrant" style="width: 100%;">Enviar Mensaje</button>
-            </form>
+        </section>
 
-            <footer class="main-footer">
+        <section class="contact-content" style="padding-top: 0;">
+            <div class="contact-wrapper">
+                
+                <div class="contact-info-panel catalog-card">
+                    <h3 style="font-size: 2.2rem; color: #fff; margin-bottom: 10px;">Agenda una <span style="color: var(--color-neon-purple); text-shadow: 0 0 15px rgba(157,0,255,0.5);">Consultoría</span></h3>
+                    <p style="margin-bottom: 35px; color: var(--color-text-muted); line-height: 1.6;">Cuéntanos los desafíos tecnológicos de tu negocio. Desde la implementación de software a medida hasta infraestructura y análisis de datos, nuestro <strong>equipo</strong> está preparado para escalar tu operación.</p>
+                    
+                    <a href="https://wa.me/51944909910" target="_blank" class="info-item" style="text-decoration: none;">
+                        <div class="info-icon-box">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="info-text">
+                            <h4>Línea Directa</h4>
+                            <p>+51 944 909 910</p>
+                        </div>
+                    </a>
+                    
+                    <a href="mailto:estefanovp123@gmail.com" class="info-item" style="text-decoration: none;">
+                        <div class="info-icon-box">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-text">
+                            <h4>Correo Personal</h4>
+                            <p>estefanovp123@gmail.com</p>
+                        </div>
+                    </a>
+                    
+                    <div class="info-item" style="cursor: default;">
+                        <div class="info-icon-box">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-text">
+                            <h4>Cobertura</h4>
+                            <p>Perú</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-panel catalog-card">
+                    <form action="#" method="POST">
+                        
+                        <div class="input-container">
+                            <i class="fas fa-user input-icon"></i>
+                            <input type="text" placeholder="Nombre de la Empresa o Contacto" required class="neon-input with-icon">
+                        </div>
+                        
+                        <div class="input-container">
+                            <i class="fas fa-envelope input-icon"></i>
+                            <input type="email" placeholder="Correo Electrónico" required class="neon-input with-icon">
+                        </div>
+                        
+                        <div class="input-container">
+                            <i class="fas fa-microchip input-icon"></i>
+                            <select class="neon-input with-icon" required style="background-color: rgba(0,0,0,0.9);">
+                                <option value="" disabled selected>¿Qué tecnología necesitas?</option>
+                                <option value="sistemas">Sistemas de Gestión (ERP/Help Desk)</option>
+                                <option value="tienda">Tienda Virtual / E-commerce</option>
+                                <option value="web">Web App a Medida</option>
+                                <option value="soporte">Soporte Técnico / Hardware</option>
+                                <option value="data">Análisis de Datos / Power BI</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        
+                        <div class="input-container">
+                            <i class="fas fa-comment-dots input-icon" style="top: 30px;"></i>
+                            <textarea placeholder="Describe brevemente los objetivos de tu proyecto..." rows="5" required class="neon-input with-icon" style="padding-top: 20px; resize: none;"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-neon-vibrant" style="width: 100%; font-size: 1.1rem; padding: 20px;">
+                            <i class="fas fa-paper-plane" style="margin-right: 10px;"></i> INICIAR DESPLIEGUE
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
         <div class="footer-container">
             <div class="footer-column brand">
-                <img src="assets/img/dnx-logo.png" alt="DNX Logo" class="footer-logo">
+                <img src="assets/img/dnx-logo.png" alt="DNX Logo" class="footer-logo logo-footer-large">
                 <h3>Diego Parodi Tardío</h3>
                 <p>CEO & Lead Developer en DNX Tecnología.</p>
             </div>
@@ -90,9 +150,10 @@
                     <i class="fab fa-whatsapp"></i> +51 944 909 910
                 </a>
                 <div class="social-icons">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/51944909910" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="mailto:estefanovp123@gmail.com" title="Correo"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>
         </div>
@@ -101,8 +162,6 @@
             <p>&copy; 2026 DNX Tecnología | Arquitectura Digital Avanzada</p>
         </div>
     </footer>
-        </section>
-    </main>
 
     <script src="js/main.js"></script>
 </body>

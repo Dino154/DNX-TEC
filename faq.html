@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DNX Tecnología | FAQ</title>
+    <title>DNX Tecnología | Preguntas Frecuentes</title>
+    
     <link rel="icon" href="assets/img/dnx-logo.png" type="image/png">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-<div class="global-universe">
+    <div class="global-universe">
         <div class="nebula"></div>
-        
         <div class="stars-bg"></div>
         <div class="stars-mid"></div>
         <div class="stars-front"></div>
-        
         <div class="cyber-grid"></div> 
     </div>
 
@@ -29,37 +30,98 @@
             <ul class="nav-links">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
-                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="faq.html" style="color: var(--color-neon-cyan); text-shadow: 0 0 8px var(--color-neon-cyan);">FAQ</a></li>
                 <li><a href="contacto.html" class="btn-small-neon">Contacto</a></li>
             </ul>
         </div>
     </nav>
 
     <main>
-        <section class="faq-section">
+        <section class="faq-hero" style="min-height: 30vh; padding-top: 150px; padding-bottom: 0;">
             <div class="section-header">
-                <h1 class="glitch-text" style="font-size: 3rem; margin-top: 50px;">Preguntas Frecuentes</h1>
+                <h1 class="glitch-text" style="font-size: 3.5rem;">Centro de <span class="text-highlight-blue">Soporte</span></h1>
                 <div class="neon-divider cyan"></div>
+                <p style="color: var(--color-text-muted); font-size: 1.1rem; margin-top: 20px; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Respuestas técnicas y comerciales rápidas a las consultas más comunes de nuestros clientes corporativos.
+                </p>
             </div>
-            <div class="faq-container">
-                <details class="faq-item catalog-card">
-                    <summary>¿Cuánto tiempo toma desarrollar una tienda virtual?</summary>
-                    <p>Dependiendo de los requerimientos y la pasarela de pagos, una tienda virtual estandarizada puede estar lista y operando en un rango de 2 a 3 semanas.</p>
-                </details>
-                <details class="faq-item catalog-card">
-                    <summary>¿Entregan el código fuente de los sistemas?</summary>
-                    <p>Para los sistemas empresariales bajo modelo de Venta/Licencia, instalamos el sistema en tus servidores. El acceso al código fuente abierto depende del acuerdo comercial y los requerimientos de seguridad.</p>
-                </details>
-                <details class="faq-item catalog-card">
-                    <summary>¿Ofrecen servicio de hosting y dominio?</summary>
-                    <p>Sí, en nuestro modelo SaaS (alquiler mensual) nosotros nos encargamos de todo el alojamiento en servidores VPS de alta velocidad. Solo te preocupas por vender.</p>
-                </details>
-            </div>
+        </section>
 
-        <footer class="main-footer">
+        <section class="faq-section" style="padding-top: 20px;">
+            
+            <div class="faq-container">
+                
+                <h3 style="color: #fff; margin-bottom: 15px; margin-top: 20px; font-size: 1.5rem; display: flex; align-items: center; gap: 10px;">
+                    <i class="fas fa-code" style="color: var(--color-neon-purple);"></i> Desarrollo, E-commerce y Data
+                </h3>
+                
+                <details class="faq-item catalog-card">
+                    <summary>¿Cuánto tiempo toma desarrollar una Tienda Virtual o Web App?</summary>
+                    <p>Dependiendo de la complejidad y los requerimientos, una plataforma estandarizada puede estar operativa en <strong>2 a 3 semanas</strong>. Desarrollos a medida y ERPs requieren un análisis previo para definir cronogramas exactos.</p>
+                </details>
+
+                <details class="faq-item catalog-card">
+                    <summary>¿Las aplicaciones y tiendas funcionan bien en celulares?</summary>
+                    <p>Absolutamente. Todos nuestros desarrollos utilizan arquitectura <strong>Mobile-First y Responsive Design</strong>. Esto significa que la interfaz se adaptará de forma nativa a cualquier tamaño de pantalla, ya sea un smartphone, tablet o monitor UltraWide.</p>
+                </details>
+
+                <details class="faq-item catalog-card">
+                    <summary>¿Integran pasarelas de pago y billeteras digitales?</summary>
+                    <p>Sí. Integramos pasarelas de pago internacionales (Stripe, PayPal) y soluciones locales para que tus clientes puedan pagar de forma segura con tarjetas de crédito/débito, transferencias y billeteras digitales (como Yape o Plin).</p>
+                </details>
+                
+                <details class="faq-item catalog-card">
+                    <summary>¿Qué pasa si mi empresa crece y necesito más funciones?</summary>
+                    <p>A diferencia del software enlatado, nosotros desarrollamos con código limpio usando frameworks potentes como <strong>Python y Django</strong>. Esto hace que tu sistema sea 100% escalable; si mañana necesitas agregar un módulo de facturación o un CRM, lo construimos e integramos sin tener que rehacer el sistema desde cero.</p>
+                </details>
+
+                <details class="faq-item catalog-card">
+                    <summary>¿En qué consiste el servicio de Análisis de Datos y Power BI?</summary>
+                    <p>Conectamos las bases de datos de tu empresa (ventas, inventario, RRHH) a la herramienta <strong>Power BI</strong>. Limpiamos la data cruda y diseñamos tableros (dashboards) interactivos para que puedas ver el rendimiento de tu negocio en tiempo real y tomar decisiones basadas en números reales.</p>
+                </details>
+                
+                <details class="faq-item catalog-card">
+                    <summary>¿Entregan el código fuente de los sistemas instalados?</summary>
+                    <p>Para los sistemas empresariales bajo el modelo de <strong>Licencia/Venta</strong>, el sistema se instala en tus servidores. El acceso total al código fuente se define en el acuerdo comercial firmado para proteger la propiedad intelectual de ambas partes.</p>
+                </details>
+
+                <details class="faq-item catalog-card">
+                    <summary>¿Ofrecen servicio de hosting (VPS) y dominio web?</summary>
+                    <p>Sí. En nuestro modelo SaaS (alquiler mensual) nosotros nos encargamos de todo: alojamiento en servidores VPS de alta velocidad (AWS/Linux), gestión de dominio y certificados de seguridad SSL. Tú solo te preocupas por operar tu negocio.</p>
+                </details>
+
+                <h3 style="color: #fff; margin-bottom: 15px; margin-top: 50px; font-size: 1.5rem; display: flex; align-items: center; gap: 10px;">
+                    <i class="fas fa-tools" style="color: var(--color-neon-cyan);"></i> Soporte Técnico y Hardware
+                </h3>
+                
+                <details class="faq-item catalog-card">
+                    <summary>¿Brindan soporte técnico a equipos físicos y servidores?</summary>
+                    <p>Totalmente. Ofrecemos servicios de <strong>diagnóstico, reparación y mantenimiento preventivo</strong> para equipos informáticos de oficina, redes locales y servidores físicos para asegurar que tu empresa no sufra caídas de hardware.</p>
+                </details>
+
+                <details class="faq-item catalog-card">
+                    <summary>¿Tienen planes de mantenimiento preventivo para empresas?</summary>
+                    <p>Sí, ofrecemos <strong>pólizas de mantenimiento mensuales</strong> o trimestrales. Visitamos tus instalaciones para limpiar equipos, optimizar sistemas operativos, actualizar antivirus y revisar el estado de los discos duros, evitando fallos catastróficos que detengan tu operación.</p>
+                </details>
+
+                <details class="faq-item catalog-card">
+                    <summary>¿El soporte del software es remoto o presencial?</summary>
+                    <p>El 95% de nuestras incidencias de software y bases de datos se resuelven de forma <strong>remota e inmediata</strong> mediante monitoreo en la nube. Para problemas de red interna o hardware físico, coordinamos visitas presenciales según la urgencia.</p>
+                </details>
+                
+                <details class="faq-item catalog-card">
+                    <summary>¿Capacitan al personal para usar los nuevos sistemas?</summary>
+                    <p>Por supuesto. Todo despliegue de software incluye sesiones de <strong>capacitación In-house o por videollamada</strong> para tu equipo, además de brindarles contacto directo con nuestra mesa de ayuda para asegurar una adopción rápida y sin fricciones de la nueva tecnología.</p>
+                </details>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
         <div class="footer-container">
             <div class="footer-column brand">
-                <img src="assets/img/dnx-logo.png" alt="DNX Logo" class="footer-logo">
+                <img src="assets/img/dnx-logo.png" alt="DNX Logo" class="footer-logo logo-footer-large">
                 <h3>Diego Parodi Tardío</h3>
                 <p>CEO & Lead Developer en DNX Tecnología.</p>
             </div>
@@ -83,9 +145,10 @@
                     <i class="fab fa-whatsapp"></i> +51 944 909 910
                 </a>
                 <div class="social-icons">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/51944909910" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="mailto:estefanovp123@gmail.com" title="Correo"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>
         </div>
@@ -94,8 +157,6 @@
             <p>&copy; 2026 DNX Tecnología | Arquitectura Digital Avanzada</p>
         </div>
     </footer>
-        </section>
-    </main>
 
     <script src="js/main.js"></script>
 </body>
