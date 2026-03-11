@@ -49,7 +49,7 @@
                 
                 <div class="contact-info-panel catalog-card">
                     <h3 style="font-size: 2.2rem; color: #fff; margin-bottom: 10px;">Agenda una <span style="color: var(--color-neon-purple); text-shadow: 0 0 15px rgba(157,0,255,0.5);">Consultoría</span></h3>
-                    <p style="margin-bottom: 35px; color: var(--color-text-muted); line-height: 1.6;">Cuéntanos los desafíos tecnológicos de tu negocio. Desde la implementación de software a medida hasta infraestructura y análisis de datos, nuestro <strong>equipo</strong> está preparado para escalar tu operación.</p>
+                    <p style="margin-bottom: 35px; color: var(--color-text-muted); line-height: 1.6;">Cuéntanos los desafíos tecnológicos de tu negocio. Desde la implementación de software hasta análisis de datos, nuestro <strong>equipo</strong> está preparado para escalar tu operación.</p>
                     
                     <a href="https://wa.me/51944909910" target="_blank" class="info-item" style="text-decoration: none;">
                         <div class="info-icon-box">
@@ -82,42 +82,44 @@
                     </div>
                 </div>
 
-                <div class="contact-form-panel catalog-card">
-                    <form action="#" method="POST">
-                        
-                        <div class="input-container">
-                            <i class="fas fa-user input-icon"></i>
-                            <input type="text" placeholder="Nombre de la Empresa o Contacto" required class="neon-input with-icon">
-                        </div>
-                        
-                        <div class="input-container">
-                            <i class="fas fa-envelope input-icon"></i>
-                            <input type="email" placeholder="Correo Electrónico" required class="neon-input with-icon">
-                        </div>
-                        
-                        <div class="input-container">
-                            <i class="fas fa-microchip input-icon"></i>
-                            <select class="neon-input with-icon" required style="background-color: rgba(0,0,0,0.9);">
-                                <option value="" disabled selected>¿Qué tecnología necesitas?</option>
-                                <option value="sistemas">Sistemas de Gestión (ERP/Help Desk)</option>
-                                <option value="tienda">Tienda Virtual / E-commerce</option>
-                                <option value="web">Web App a Medida</option>
-                                <option value="soporte">Soporte Técnico / Hardware</option>
-                                <option value="data">Análisis de Datos / Power BI</option>
-                                <option value="otro">Otro</option>
-                            </select>
-                        </div>
-                        
-                        <div class="input-container">
-                            <i class="fas fa-comment-dots input-icon" style="top: 30px;"></i>
-                            <textarea placeholder="Describe brevemente los objetivos de tu proyecto..." rows="5" required class="neon-input with-icon" style="padding-top: 20px; resize: none;"></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn-neon-vibrant" style="width: 100%; font-size: 1.1rem; padding: 20px;">
-                            <i class="fas fa-paper-plane" style="margin-right: 10px;"></i> INICIAR DESPLIEGUE
-                        </button>
-                    </form>
-                </div>
+         <div class="contact-form-panel catalog-card">
+    <form action="https://formspree.io/f/xlgpbjpp" method="POST" id="my-form">
+        
+        <div class="input-container">
+            <i class="fas fa-user input-icon"></i>
+            <input type="text" name="nombre" placeholder="Nombre de la Empresa o Contacto" required class="neon-input with-icon">
+        </div>
+        
+        <div class="input-container">
+            <i class="fas fa-envelope input-icon"></i>
+            <input type="email" name="email" placeholder="Correo Electrónico" required class="neon-input with-icon">
+        </div>
+        
+        <div class="input-container">
+            <i class="fas fa-microchip input-icon"></i>
+            <select name="servicio" class="neon-input with-icon" required style="background-color: rgba(0,0,0,0.9);">
+                <option value="" disabled selected>¿Qué tecnología necesitas?</option>
+                <option value="sistemas">Sistemas de Gestión (ERP/Help Desk)</option>
+                <option value="tienda">Tienda Virtual / E-commerce</option>
+                <option value="web">Web App a Medida</option>
+                <option value="soporte">Soporte Técnico / Hardware</option>
+                <option value="data">Análisis de Datos / Power BI</option>
+                <option value="otro">Otro</option>
+            </select>
+        </div>
+        
+        <div class="input-container">
+            <i class="fas fa-comment-dots input-icon" style="top: 30px;"></i>
+            <textarea name="mensaje" placeholder="Describe brevemente los objetivos de tu proyecto..." rows="5" required class="neon-input with-icon" style="padding-top: 20px; resize: none;"></textarea>
+        </div>
+        
+        <button type="submit" id="submit-btn" class="btn-neon-vibrant" style="width: 100%; font-size: 1.1rem; padding: 20px;">
+            <i class="fas fa-paper-plane" style="margin-right: 10px;"></i> INICIAR DESPLIEGUE
+        </button>
+
+        <div id="form-status" style="margin-top: 20px; text-align: center; font-weight: bold; min-height: 24px;"></div>
+    </form>
+</div>
 
             </div>
         </section>

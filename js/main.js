@@ -212,3 +212,46 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+/* =========================================================================
+   ENVÍO DE FORMULARIO AJAX (SIN REDIRECCIÓN)
+   ========================================================================= */
+const contactForm = document.getElementById("my-form");
+
+if (contactForm) {
+    async function handleFormSubmit(event) {
+        event.preventDefault();
+        const status = document.getElementById("form-status");
+        const data = new FormData(event.target);
+        const btn = document.getElementById("submit-btn");
+
+        // UI de carga
+        btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> PROCESANDO...';
+        btn.disabled = true;
+
+        fetch(event.target.action, {
+            method: contactForm.method,
+            body: data,
+            headers: { 'Accept': 'application/json' }
+        }).then(response => {
+            if (response.ok) {
+                // ÉXITO: Estilo Neón Cian
+                status.innerHTML = "¡Solicitud recibida! El equipo de DNX se contactará pronto.";
+                status.style.color = "var(--color-neon-cyan)";
+                status.style.textShadow = "0 0 10px var(--color-neon-cyan)";
+                contactForm.reset(); 
+            } else {
+                status.innerHTML = "Error al enviar. Intenta nuevamente o vía WhatsApp.";
+                status.style.color = "var(--color-neon-red)";
+            }
+        }).catch(error => {
+            status.innerHTML = "Error de conexión. Revisa tu internet.";
+            status.style.color = "var(--color-neon-red)";
+        }).finally(() => {
+            // Restaurar botón
+            btn.innerHTML = '<i class="fas fa-paper-plane" style="margin-right: 10px;"></i> INICIAR DESPLIEGUE';
+            btn.disabled = false;
+        });
+    }
+    
+    contactForm.addEventListener("submit", handleFormSubmit);
+}

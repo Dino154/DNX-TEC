@@ -228,23 +228,24 @@ body {
    4. SISTEMA DE BOTONES Y TECNOLOGÍAS
    ========================================================= */
 .btn-neon-vibrant {
-    display: inline-block;
-    padding: 15px 35px;
-    background: transparent;
-    color: var(--color-text);
-    text-decoration: none;
-    font-weight: bold;
+    display: inline-block; 
+    padding: 15px 35px; 
+    background: var(--color-neon-purple); /* ANTES ESTABA EN TRANSPARENT */
+    color: #fff;
+    text-decoration: none; 
+    font-weight: bold; 
     border: 2px solid var(--color-neon-purple);
-    border-radius: 4px;
-    box-shadow: 0 0 15px rgba(157,0,255,0.4), inset 0 0 10px rgba(157,0,255,0.4);
-    transition: 0.3s;
-    text-transform: uppercase;
+    border-radius: 4px; 
+    box-shadow: 0 0 15px rgba(157,0,255,0.6); /* Sombra inicial fuerte */
+    transition: 0.3s ease; 
+    text-transform: uppercase; 
     cursor: pointer;
 }
 
-.btn-neon-vibrant:hover {
-    background: var(--color-neon-purple);
-    box-shadow: 0 0 30px var(--color-neon-purple);
+.btn-neon-vibrant:hover { 
+    background: #af33ff; /* Un morado un poco más claro al hacer hover */
+    box-shadow: 0 0 35px var(--color-neon-purple); /* Brillo intenso */
+    transform: scale(1.05); /* Pequeño salto hacia el usuario */
 }
 
 .btn-small-neon {
